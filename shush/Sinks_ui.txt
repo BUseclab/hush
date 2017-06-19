@@ -1,0 +1,39 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	UI Element Sinks
+% These are all the known UI sinks 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+<android.widget.TextView: void setText(java.lang.CharSequence)> -> _SINK_
+<android.widget.TextView: void setText(java.lang.CharSequence,android.widget.TextView.BufferType)> -> _SINK_
+
+%Easy taint?
+%BitmapFactory.decodeStream
+%Bitmap
+<android.widget.ImageView: void setImageBitmap(android.graphics.Bitmap)> -> _SINK_
+
+<android.widget.CheckBox: void setChecked(boolean)> -> _SINK_
+
+<android.widget.ToggleButton: void setChecked(boolean)> -> _SINK_
+<android.widget.ToggleButton: void setTextOff(java.lang.CharSequence)> -> _SINK_
+<android.widget.ToggleButton: void setTextOn(java.lang.CharSequence)> -> _SINK_
+
+%Alert dialog
+<android.app.AlertDialog: void setTitle(java.lang.CharSequence)> -> _SINK_
+<android.app.AlertDialog: void setMessage(java.lang.CharSequence)> -> _SINK_
+<android.app.AlertDialog: void setButton(int,java.lang.CharSequence,android.os.Message)> -> _SINK_
+
+%Alert Builder
+<android.app.AlertDialog$Builder: setItems(java.lang.CharSequence[],android.content.DialogInterface.OnClickListener)> -> _SINK_
+<android.app.AlertDialog$Builder: setNegativeButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)> -> _SINK_
+<android.app.AlertDialog$Builder: setNeutralButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)> -> _SINK_
+<android.app.AlertDialog$Builder: setPostivieButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)> -> _SINK_
+<android.app.AlertDialog$Builder: void setMessage(java.lang.CharSequence)> -> _SINK_
+<android.app.AlertDialog$Builder: void setTitle(java.lang.CharSequence)> -> _SINK_
+
+%Action bar
+<android.app.ActionBar: void setSubtitle(java.lang.CharSequence)> -> _SINK_
+<android.app.ActionBar: void setTitle(java.lang.CharSequence)> -> _SINK_
+
+<android.webkit.WebView: void loadData(java.lang.String,java.lang.String,java.lang.String)> -> _SINK_

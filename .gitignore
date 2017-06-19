@@ -1,0 +1,8 @@
+bin/
+sootOutput/
+target/
+.settings
+target/
+results-1/
+*~
+*.log

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>edu.bu.android_mitm</groupId>
+  <artifactId>soot-infoflow-android</artifactId>
+  <versioning>
+    <release>1.0-16062015</release>
+    <versions>
+      <version>1.0-16062015</version>
+    </versions>
+    <lastUpdated>20151115201853</lastUpdated>
+  </versioning>
+</metadata>
