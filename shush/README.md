@@ -21,13 +21,13 @@ Software Testing and Analysis},
 
 # Build
 
-``
+```
 mvn install
-``
+```
 
 # Assemble
 
-``
+```
 mvn assembly:assembly
 ```
 
